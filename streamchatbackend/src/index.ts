@@ -1,13 +1,10 @@
 import cors from "cors";
 import "dotenv/config";
 import express from "express";
-import {apiKey}  from "./serverClient";
+import { apiKey } from "./serverClient";
 
 const app = express();
 app.use(express.json());
-
-console.log("hello");
-console.log("ApiKey", apiKey);
 
 app.use(
   cors({
