@@ -9,7 +9,5 @@ if (!apiKey || !apiSecret) {
     "Missing required environment variables STREAM_API_KEY or STREAM_API_SECRET"
   );
 }
-
 const serverClient = new StreamChat(apiKey, apiSecret);
-
 export { apiKey, apiSecret, serverClient };
